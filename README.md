@@ -1,7 +1,7 @@
 # geo-volunteer
 Uses different _simple_ approaches to find volunteers near a certain client. 
 
-## approaches 
+## preliminary approaches (blank canvas)
 ### Approach 1: brute force
 <img align="right" src="/assets/bruteForce.png" width="150">
 Runs through each and every volunteer in the entire area under consideration and finds the (squared) distance relative to client's coordinates.
@@ -19,6 +19,9 @@ Forms a "bounding box" around the particular client of a certain set size of sid
 - Time consumed is much less than brute forcing every single point.
 
 <br>
+
+## geographical approaches (actual map)
+[WIP] Google Maps/OpenStreetMap integration.
 
 ## stack
 Basic Python.
