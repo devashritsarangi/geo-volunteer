@@ -4,6 +4,8 @@
 # this defined bounding box or not. Then we can proceed by notifying those present within the box.
 # If they deny, the bounding box will expand to cover more points.
 
+# Still inefficient cuz we have to run through every point, but *better* wrt brute forcing.
+
 volunteers = [
     {"name": "tanmay", "x": 40, "y": 5},
     {"name": "swastik", "x": 20, "y": 3},
