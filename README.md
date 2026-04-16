@@ -1,13 +1,24 @@
 # geo-volunteer
-uses different approaches* to find volunteers near a certain issue report
+Uses different _simple_ approaches to find volunteers near a certain client. 
 
-<sub><sup>*brute force and quadtrees</sub></sup>
+## approaches 
+### Approach 1: brute force
+<img align="right" src="/assets/bruteForce.png" width="150">
+Runs through each and every volunteer in the entire area under consideration and finds the (squared) distance relative to client's coordinates.
 
-## approach 1: brute force
-involves having one user at a certain coordinate wrt origin, and various volunteers at coordinates wrt origin.
+- Inefficient and cumbersome, but very simple to implement.
+- Becomes very time-consuming when thousands of clients/volunteers are involved.
 
-This program scours through every single volunteer in determining the closest possible volunteer to client.
+<br>
 
-Very time consuming if we consider in a global scale, but if we limit our bounding area to just a single city it still is very inefficient but gets the job done.
+### Approach 2: bounding boxes
+<img align="right" src="/assets/boundingBox.png" width="150">
+Forms a "bounding box" around the particular client of a certain set size of sides and proceeds to find which volunteers fall within that bounding box and calculate their distances to the client.
 
-## [WIP] approach 2: bounding boxes / quadtrees
+- Efficiency is better versus the first approach. Simple-ish to implement.
+- Time consumed is much less than brute forcing every single point.
+
+<br>
+
+## stack
+Basic Python.
