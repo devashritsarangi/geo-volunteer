@@ -27,7 +27,6 @@ for volunteer in volunteers:
 
 distances.sort(key=lambda item: item["distance"])
 
-# 5. Print the 1st, 2nd, and 3rd closest
-print("1st closest:", distances[0]["name"])
-print("2nd closest:", distances[1]["name"])
-print("3rd closest:", distances[2]["name"])
+# 5. Print the closest
+for i in range(len(distances)):
+    print(f"{[i+1]} closest: {distances[i]["name"]} with distance {(distances[i]["distance"])**1/2}")
